@@ -1,0 +1,159 @@
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+.header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  background-color: #181717;
+  box-shadow: 0px 0px  1rem  #3b3a3a;
+  height: 10vh;
+
+}
+.divs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+ ul li {
+  display: inline;
+}
+ ul li a {
+  color: rgb(164, 164, 230);
+  text-decoration: none;
+  padding: 5px;
+}
+ ul li a:hover{
+  background-color: darkgray;
+  border-radius: 15px;
+}
+h1{
+  color: green;
+}
+span{
+  color: rgb(164, 164, 230);
+  font-size: 2rem;
+}
+
+main {
+ 
+  padding: 20px;
+  height: 75vh;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+}
+.body{
+  padding: 2.1rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 71vh;
+  background-color: black;
+  color: white;
+}
+.body>p{
+  color: white;
+  font-size: 36px;
+}
+.body>img{
+  position: relative;
+  width: 35rem;
+  height:20rem;
+}
+.books{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #fff;
+  position: relative;
+  background-color: #181717;
+  overflow-y: scroll;
+}
+.books>.book{
+  margin: 1rem;
+  padding: 1rem;
+box-shadow:  2px 2px 3px 5px rgb(52, 49, 49);
+}
+
+footer {
+  box-shadow: 0px 0px  1rem rgb(40, 39, 39);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #181717;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  height: 5.2vh;
+}
+
+
+@media screen and (max-width:619px){
+    .body>div{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .icons .bi-wechat{
+        display: flex;
+    }
+    .icons .bi-facebook,.icons .bi-instagram,.icons .bi-twitter{
+        display: none;
+    }
+}
+
+@media screen and (max-width:553px){
+     .bi-list{
+        display: flex;
+     }
+     .icons .bi-wechat{
+        display: none;
+     }
+     nav ul{
+        display: none;
+     }
+}
+
+@media screen and (min-width:700px) {
+    .all-about .about1{
+        flex: 1;
+    }
+    .all-about .about2{
+        flex: 1;
+    }
+}
+
+@media screen and (min-width:1300px){
+     .lists{
+        width: 70%;
+     }
+     .book a img{
+        width: 20rem;
+        height: 40rem;
+     }
+}
+
+@media screen and (max-width:1110px){
+    .lists{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 18px;
+    }
+    .book{
+        margin: 5% 0;
+    }
+}
